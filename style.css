@@ -1,0 +1,235 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: #101325;
+    color: #f7f8fc;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #fff;
+}
+
+
+/* Utitlity */
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 30px 14px 30px;
+    border: transparent;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #f7f8fc;
+    background-color: #1a1a1a;
+    transition: background-color 0.8s;
+}
+
+.btn-view {
+    color: #333;
+    background-color: #f7f8fc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-bottom: transparent;
+    transition: all 0.5s;
+}
+
+.btn-view:hover {
+    background-color: #101325;
+    border-bottom: 2px solid #f7f8fc;
+    color: #f7f8fc;
+    border-radius: 0;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #101325;
+    border-bottom: 2px solid #101325;
+}
+
+.primary-heading {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.secondary-text {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.tertiary-heading {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+
+/* NAVBAR */
+
+#nav-bar {
+    background-color: #101325;
+    color: #fff;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 5px 10px 8px #101325;
+}
+
+#nav-bar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#nav-bar a {
+    color: #fff;
+}
+
+#nav-bar ul {
+    list-style: none;
+    float: right;
+}
+
+#nav-bar ul li {
+    float: left;
+    color: #fff;
+}
+
+#nav-bar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* SHOWCASE */
+
+#showcase {
+    height: 100vh;
+    position: relative;
+}
+
+#showcase .container #about {
+    position: absolute;
+    top: 36%;
+}
+
+.primary-heading {
+    font-size: 70px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+#showcase-content {
+    font-size: 20px;
+    width: 750px;
+    color: #8f8f8f;
+}
+
+
+/* PROJECT  */
+
+#project {
+    margin-bottom: 140px;
+}
+
+.box {
+    margin-bottom: 50px;
+    width: 33.3%;
+    float: left;
+}
+
+.box p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.project-img {
+    height: 90px;
+}
+
+.project-img img {
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* Contact */
+
+#contact {
+    border-top: 2px solid #f7f8fc;
+}
+
+#social {
+    height: 100px;
+}
+
+#social ul {
+    list-style: none;
+}
+
+#social ul li {
+    display: inline-block;
+    margin: 10px 15px;
+}
+
+
+/* Animations */
+
+span {
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#footer p {
+    text-align: center;
+}
